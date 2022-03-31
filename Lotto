@@ -1,0 +1,39 @@
+# 1. Zaproszenie do gry i nazwanie zmiennych
+print("Hej! Chcesz zagrać? Wybierz TAK lub NIE")
+odpowiedz = str(input("Tutaj napisz odpowiedź: "))
+Lotto = print("...")
+MultiMulti = print("...")
+Eurojackpot = print("...")
+# 2. co kiedy gracz odpowie TAK NIE lub cos zle
+# zrób zeby byeło w petli dopoki nie dokonamy poprawnego wyboru 
+if (odpowiedz == "TAK"):
+    print("Gry do wyboru: Lotto, MultiMulti, Eurojackpot" )
+    wybor = input("Twoja gra: ")
+    if (wybor == "Lotto"):
+        print(Lotto)
+    elif (wybor == MultiMulti):
+        print(MultiMulti)
+    elif (wybor == Eurojackpot):
+        print(Eurojackpot)
+    else:
+        wybor = input("Prosze podać poprawna nazwe gry: ")
+elif (odpowiedz == "NIE"):
+    print("Okej do zobaczenia!")
+# 3. tutaj jesli gracz odpowie zle
+else:
+    odpowiedz2 = input("Podaj swoja odpowiedz jeszcze raz: ")
+    if (odpowiedz2  == "TAK"):
+        print("Gry do wyboru: Lotto, MultiMulti, Eurojackpot" )
+        print(wybor)
+        if (wybor == "Lotto"):
+            print(Lotto)
+        elif (wybor == MultiMulti):
+            print(MultiMulti)
+        elif (wybor == Eurojackpot):
+            print(Eurojackpot)
+        else:
+            wybor = input("Prosze podać poprawna nazwe gry: ")
+    elif (odpowiedz2 == "NIE"):
+        print("Okej do zobaczenia!")
+    else:
+        odpowiedz2 = input("Podaj swoja odpowiedz jeszcze raz: ")
